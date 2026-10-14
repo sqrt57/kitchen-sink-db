@@ -19,4 +19,4 @@ Survey Rust storage engines and their designs: sled, redb, fjall, and LMDB-style
 - **Reuse**: everything is permissively licensed (MIT/Apache, OpenLDAP for LMDB). Study redb and fjall, and optionally use them as test-only oracles. Do not take a runtime dependency, per the decision to write the core ourselves.
 - Open: whether the LMDB 0.9 release branch (vs `mdb.master`) grows files incrementally on Windows; no benchmarks were gathered.
 
-Full findings: branch `research/rust-storage-engine-prior-art`, file `research/rust-storage-engine-prior-art.md`
+Full findings: [research/rust-storage-engine-prior-art.md](../research/rust-storage-engine-prior-art.md)

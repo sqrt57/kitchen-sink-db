@@ -21,4 +21,4 @@ Compare using tantivy with building a native inverted index stored in the engine
 - Visibility design is still open and depends on the "shared KV core" decision: either check candidate rows against the snapshot (the PostgreSQL way) or rely on MVCC-versioned posting keys.
 - Not checked: GIN's exact WAL record types, tantivy's mmap behavior on Windows, which Unicode normalization crate to use.
 
-Full findings: branch `research/full-text-search-options`, file `research/full-text-search-options.md`
+Full findings: [research/full-text-search-options.md](../research/full-text-search-options.md)

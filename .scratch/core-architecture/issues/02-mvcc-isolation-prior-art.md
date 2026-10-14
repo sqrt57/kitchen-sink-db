@@ -21,4 +21,4 @@ How do PostgreSQL (including SSI), InnoDB, SQLite (WAL mode) and the Cahill et a
 - **Suggested staging for us:** single writer with SI readers first, then multi-writer SI with first-updater-wins, then key-range SSI with bounded memory. Key-range locks fit naturally if Globals and table keys share one key order.
 - Caveat: the Cahill paper itself was not accessible (ACM 403); its claims are quoted via Grittner's 2009 pgsql-hackers post and the Ports & Grittner VLDB 2012 paper.
 
-Full findings: branch `research/mvcc-isolation-prior-art`, file `research/mvcc-isolation-prior-art.md`
+Full findings: [research/mvcc-isolation-prior-art.md](../research/mvcc-isolation-prior-art.md)

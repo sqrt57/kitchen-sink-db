@@ -20,4 +20,4 @@ How do InterSystems Caché/IRIS, GT.M/YottaDB, FoundationDB (record/SQL layers) 
 - CockroachDB removed interleaved (parent-prefixed) tables because of complexity and negligible benefit. Keys can nest, but don't build planner features around nesting early.
 - Unconfirmed from primary pages: where IRIS stores its SQL catalog and what isolation levels IRIS offers. Octo's "transaction control not yet implemented" may be out of date.
 
-Full findings: branch `research/sql-over-kv-prior-art`, file `research/sql-over-kv-prior-art.md`
+Full findings: [research/sql-over-kv-prior-art.md](../research/sql-over-kv-prior-art.md)

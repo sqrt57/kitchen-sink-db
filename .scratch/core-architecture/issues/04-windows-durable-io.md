@@ -20,4 +20,4 @@ Windows durable-I/O facts for a WAL-based engine: FlushFileBuffers, FILE_FLAG_WR
 - Pitfalls: antivirus filter drivers cause sharing violations and latency (retry on `ERROR_SHARING_VIOLATION`, document exclusions), drive caches can lie about flushes, `FILE_ATTRIBUTE_TEMPORARY` suppresses write-back, and network shares are unsupported. Use `MoveFileEx(..., MOVEFILE_WRITE_THROUGH)` for durable renames.
 - Open: Windows behavior after a failed flush is undocumented; crash-atomicity of `MOVEFILE_REPLACE_EXISTING` is undocumented.
 
-Full findings: branch `research/windows-durable-io`, file `research/windows-durable-io.md`
+Full findings: [research/windows-durable-io.md](../research/windows-durable-io.md)
