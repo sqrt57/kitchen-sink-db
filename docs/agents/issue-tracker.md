@@ -28,3 +28,6 @@ Used by `/wayfinder`. The **map** is a file with one **child** file per ticket.
 - **Frontier**: scan `.scratch/<effort>/issues/` for files that are open, unblocked, and unclaimed; first by number wins.
 - **Claim**: set `Status: claimed` and save before any work.
 - **Resolve**: append the answer under an `## Answer` heading, set `Status: resolved`, then append a context pointer (gist + link) to the map's Decisions-so-far in `map.md`.
+- **Research findings**: written to `.scratch/<effort>/research/<slug>.md` on `main`, linked from the ticket's `## Answer`. This replaces the throwaway `research/<name>` branch: no branch, no worktree, no push.
+- **Research resolution**: a research subagent writes only its findings file and returns the `## Answer` text plus the one-line map gist. The dispatching session resolves the ticket and edits `map.md`, so the map has a single writer.
+- **Lint**: `python3 scripts/lint-scratch.py` checks ticket fields, blocking ids, map pointers and relative links; it runs as the pre-commit hook (enable with `git config core.hooksPath .githooks`).
